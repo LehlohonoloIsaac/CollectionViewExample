@@ -10,9 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var myCollectionView: UICollectionView!
+    
+    var images = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        (0...700).forEach({
+            print($0)
+            images.append("\($0)")
+        })
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,5 +28,21 @@ class ViewController: UIViewController {
     }
 
 
+}
+
+extension UIViewController: UICollectionViewDelegate {
+
+}
+
+extension ViewController: UICollectionViewDataSource {
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return images.count
+    }
+
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collection_cell", for: indexPath) as! MyCollectionViewCell
+        cell.thumbnailImage.image = UIImage(named: "\(images[indexPath.row])")
+        return cell
+    }
 }
 

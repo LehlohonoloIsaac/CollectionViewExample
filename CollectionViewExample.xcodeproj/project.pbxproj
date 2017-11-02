@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED1510CC1FA9F6F100BFF533 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1510CB1FA9F6F100BFF533 /* MyCollectionViewCell.swift */; };
 		EDF64ACC1FA9F4920011041D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF64ACB1FA9F4920011041D /* AppDelegate.swift */; };
 		EDF64ACE1FA9F4920011041D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF64ACD1FA9F4920011041D /* ViewController.swift */; };
 		EDF64AD11FA9F4920011041D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDF64ACF1FA9F4920011041D /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED1510CB1FA9F6F100BFF533 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		EDF64AC81FA9F4920011041D /* CollectionViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDF64ACB1FA9F4920011041D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDF64ACD1FA9F4920011041D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				EDF64AD21FA9F4920011041D /* Assets.xcassets */,
 				EDF64AD41FA9F4920011041D /* LaunchScreen.storyboard */,
 				EDF64AD71FA9F4920011041D /* Info.plist */,
+				ED1510CB1FA9F6F100BFF533 /* MyCollectionViewCell.swift */,
 			);
 			path = CollectionViewExample;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 			files = (
 				EDF64ACE1FA9F4920011041D /* ViewController.swift in Sources */,
 				EDF64ACC1FA9F4920011041D /* AppDelegate.swift in Sources */,
+				ED1510CC1FA9F6F100BFF533 /* MyCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
